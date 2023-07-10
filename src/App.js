@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import VeryEasy from "./ components/veryeasy";
+import BasicInfo from "./ components/basicinfo";
+import Contacts from "./ components/contacts";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Comparing both components to see if both visually look the same */}
+      <VeryEasy />
+      <BasicInfo />
+      <Contacts />
+
     </div>
   );
 }
